@@ -1,0 +1,30 @@
+.main {
+    font-size: 3rem;
+    padding-top: 200px;
+  }
+
+  .title{
+    padding-top: 100px;
+  }
+
+  .icon {
+    opacity: 0.5; 
+    position: relative;
+    height: 200px;
+  }
+
+  #animate {
+    display: none;
+    position: absolute;
+  } 
+
+  .icon img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .temp{
+    padding: 10px 0 10px;
+    font-size: 5rem;
+    font-weight: bold;
+  }

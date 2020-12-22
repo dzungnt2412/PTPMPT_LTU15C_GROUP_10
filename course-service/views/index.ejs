@@ -33,10 +33,10 @@
     </section> -->
 
     <div class="container main">
-      <div class="time  d-flex justify-content-center"><%= dt %></div>
+      <div class="time  d-flex justify-content-center" id="day"></div>
       <div class="title  d-flex justify-content-between">
         <p class="city">Ha noi</p>
-        <p class="time"><%= time %></p>
+        <p class="time" id="time" onload="showTime()"></p>
       </div>
       <div class="overview ">
         <div class="temp d-flex justify-content-center"><%= temp %></div>
@@ -82,38 +82,9 @@
   </body>
 
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="chat.js"></script>
+  <script src="weather.js"></script>
 </html>
 
 <style>
-  .main {
-    font-size: 3rem;
-    padding-top: 200px;
-  }
 
-  .title{
-    padding-top: 100px;
-  }
-
-  .icon {
-    opacity: 0.5; 
-    position: relative;
-    height: 200px;
-  }
-
-  #animate {
-    display: none;
-    position: absolute;
-  } 
-
-  .icon img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .temp{
-    padding: 10px 0 10px;
-    font-size: 5rem;
-    font-weight: bold;
-  }
 </style>

@@ -63,7 +63,10 @@ io.on('connection', (socket) => {
     console.log('New user connected')
 
     socket.on('disconnecting', (reason) => {
-        list_id.pop(socket.userID)
+        const index = list_id.indexOf(socket.userID);
+        if (index > -1) {
+            list_id.splice(index, 1);
+        }
     })
     
 
