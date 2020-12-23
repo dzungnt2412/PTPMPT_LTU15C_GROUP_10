@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Simple Chat App</title>
+  </head>
+
+  <body>
+    <!-- <header>
+      <h1>Super Chat</h1>
+    </header>
+
+    <section>
+      <div id="change_username">
+	<input id="username" type="text" />
+	<button id="send_username" type="button">Change username</button>
+      </div>
+    </section>
+
+    <section id="chatroom">
+      <section id="feedback"></section>
+    </section>
+
+    
+
+    <section id="input_zone"> 
+      <input id="message" class="vertical-align" type="text" />
+      <button id="send_message" class="vertical-align" type="button">Send</button>
+    </section> -->
+
+    <div class="container main">
+      <div class="time  d-flex justify-content-center" id="day"></div>
+      <div class="title  d-flex justify-content-between">
+        <p class="city">Ha noi</p>
+        <p class="time" id="time" onload="showTime()"></p>
+      </div>
+      <div class="overview ">
+        <div class="temp d-flex justify-content-center"><%= temp %>°C</div>
+        <div class="desc d-flex justify-content-center"><%= desc %></div>
+        <div class="icon cloud hidden">
+          <img id="animate" src="http://openweathermap.org/img/w/04d.png">
+        </div>
+        <!-- <div class="icon sun">04d</div>
+        <div class="icon rain">04d</div> -->
+      </div>
+
+      <ul class="info list-group">
+        <li class="list-group-item d-flex justify-content-between">
+          <p>Feels like</p>
+          <p><%= feels_like %></p>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <p>Temp min</p>
+          <p><%= temp_min %></p>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <p>Temp max</p>
+          <p><%= temp_max %></p>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <p>Pressure</p>
+          <p><%= pressure %></p>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <p>Humidity</p>
+          <p><%= humidity %></p>
+        </li>  
+
+
+      </ul>
+
+    </div>
+
+  </body>
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="weather.js"></script>
+</html>
+
+<style>
+
+</style>
