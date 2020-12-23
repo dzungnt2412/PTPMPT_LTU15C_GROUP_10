@@ -71,7 +71,7 @@
 /*-- Index-Page-Styling --*/
 
 body {
-	background: url("../images/background.jpg");
+	background: url("./images/background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -104,13 +104,13 @@ h1 {
 .container {
 	width: 65%;
 	margin: 50px auto;
-	background-color: rgba(0, 0, 0, 0.73);
+	background-color: rgba(0, 0, 0, 0.46);
 }
 
 .city {
 	width: 60%;
 	float: left;
-	background: url("../images/city.jpg");
+	background: url("./images/chua.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
